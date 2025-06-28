@@ -1,0 +1,37 @@
+.form{
+    input[type=text], select, textarea {
+        width: 20%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        text-align: left;
+      } 
+}
+
+button[type=submit] {
+    background-color: #39d6db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align:center ;
+ }  
+
+.mycontainer1 {
+    width:30%;
+    float:left;
+    text-align: justify;
+}
+  
+.mycontainer2 {
+      width:70%;
+      overflow:auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+  }
+
+   

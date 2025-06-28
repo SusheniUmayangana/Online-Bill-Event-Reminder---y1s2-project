@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Adding links for Title & website Icon-->
+    <title>Online Bill and Event Reminder</title>
+    <link rel="icon" type="image/x-icon" href="Images/PageIcon.png">
+    <!--Style link for Icons using on cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--External Style Files link below-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <!-- Header Section (Navigation Bar) Start Here..-->
+    <header>
+        <h2 class="logo1">Admin<span class="s1">Panal</span></h2>
+        <nav>
+            <ul>
+                <li><a href="Index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="Form.html" class="nav-link">Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section (Navigation Bar) End Here..-->
+
+    <!-- Content Section Start Here..-->
+    <!-- product CRUD section starts  -->
+
+   <section class="add-products">
+
+      <form action="" method="post" enctype="multipart/form-data">
+         <h2>Add New Event</h2>
+         <input type="text" name="name" class="box" placeholder="enter event name" required>
+         <input type="text" name="venue" class="box" placeholder="enter event venue" required>
+         <input type="text" name="price" class="box" placeholder="enter event price" required>
+         <input type="text" name="date" class="box" placeholder="enter event date" required>
+         <input type="text" name="time" class="box" placeholder="enter event time" required>
+         <input type="file" name="image" accept="image/jpg, image/jpeg, image/png" class="box" required>
+         <input type="submit" value="Add Event" name="Add_Event" class="btn">
+      </form>
+
+    </section>
+
+    <!-- product CRUD section ends -->
+    <!-- Content Section End Here..-->
+
+</body>
+</html>

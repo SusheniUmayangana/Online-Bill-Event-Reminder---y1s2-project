@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Adding links for Title & website Icon-->
+    <title>Online Bill and Event Reminder</title>
+    <link rel="icon" type="image/x-icon" href="Images/PageIcon.png">
+    <!--Style link for Icons using on cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--External Style Files link below-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Event_Manager_login.css">
+</head>
+<body>
+    <!-- Header Section (Navigation Bar) Start Here..-->
+    <header>
+        <h2 class="logo1">Admin<span class="s1">Panal</span></h2>
+        <nav>
+            <ul>
+                <li><a href="Index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="nav-link">Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section (Navigation Bar) End Here..-->
+
+    <!-- Content Section Start Here..-->
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div id="errorMessage" class="error"></div>
+    </div>
+
+    <!-- Content Section End Here..-->
+
+    <!-- java script code for validate event manager login..-->
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+            // Predefined username and password
+            var validUsername = "EventManager";
+            var validPassword = "1122334455";
+    
+            if (username === validUsername && password === validPassword) {
+                // Redirect to another page after successful login
+                window.location.href = "Form.php";
+                return false; // Prevent form submission
+            } else {
+                // Display error message if credentials are incorrect
+                document.getElementById("errorMessage").innerText = "Invalid username or password";
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+
+</body>
+</html>

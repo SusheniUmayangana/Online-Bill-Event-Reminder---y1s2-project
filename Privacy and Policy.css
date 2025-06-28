@@ -1,0 +1,19 @@
+h4{
+  text-align: justify;
+  color: rgb(33, 113, 205);
+  padding-left: 40px;
+}
+
+p{
+    padding-left: 60px;
+    padding-right: 60px;
+    box-align:justify;
+}
+
+h2{
+    color:rgba(10, 5, 1, 0.881);
+    font-family: Arial  ;
+    padding-bottom: 20px;
+}
+
+

@@ -1,0 +1,115 @@
+/* CSS for Body */
+body {
+    font-family: Arial, sans-serif;     /* Set font family for body */
+    margin: 0;                          /* Remove default margin */
+    padding: 0;                         /* Remove default padding */
+    background-color: #F8F0E5;
+}
+
+/* CSS for Navigation Bar */
+header {
+    background-color: #393E46;          /* Set background color for header */
+    color: #fff;                        /* Set text color for header */
+    padding: 12px;                        /* Add padding inside header */
+    display: flex;                        /* Use flexbox for layout */
+    justify-content: space-between;       /* Space items evenly */
+    align-items: center;                  /* Center items vertically */
+}
+
+/* CSS for Logo */
+.logo {
+    width: 80px;                           /* Set width for logo */
+    height: auto;                           /* Maintain aspect ratio */
+    display: block;                         /* Make logo a block element */
+    margin: left;                           /* Incorrect margin property, should be margin-left */
+    border-radius: 50%;                      /* Add border radius to logo */
+}
+
+.nav-link:hover {
+    color: #00ffff;                       /* Change text color on hover */
+    transition: .30s;                       /* Add transition effect */
+}
+
+nav ul {
+    list-style-type: none;                  /* Remove default list styles */
+    padding: 0;                             /* Remove default padding */
+}
+
+nav ul li {
+    display: inline;                        /* Display list items inline */
+    margin-right: 30px;                     /* Add right margin to separate items */
+}
+
+.btn1 {
+    background-color: #FFE6E6;            /* Set background color for button */
+    color: #333;                          /* Set text color for button */
+    padding: 10px 20px;                     /* Add padding inside button */
+    text-decoration: none;                  /* Remove default text decoration */
+    border-radius: 12px;                    /* Add border radius to button */
+}
+
+.btn1:hover {
+    background-color: #00ffff;            /* Change background color on hover */
+    transition: .30s;                       /* Add transition effect */
+}
+
+nav ul li a {
+    color: #fff;                          /* Set text color for navigation links */
+    text-decoration: none;                  /* Remove default text decoration */
+}
+
+
+/* CSS for Footer */
+footer {
+    background-color: #393E46;            /* Set background color for footer */
+    color: #fff;                          /* Set text color for footer */
+    padding: 20px;                          /* Add padding inside footer */
+    text-align: center;                     /* Center text horizontally */
+}
+
+.icon {
+    width: 37px;                            /* Set width for icon */
+    height: 37px;                           /* Set height for icon */
+    border-radius: 30%;                     /* Add border radius to create circle */
+}
+
+nav {
+    display: flex;                          /* Use flexbox for layout */
+}
+
+table.t1 {
+    padding-left: 50px;                     /* Add left padding for table */
+    text-align: left;                       /* Align text to the left */
+}
+
+table.t2 {
+    padding-left: 80px;                     /* Add left padding for table */
+    text-align: center;                     /* Align text to the center */
+}
+
+.ft {
+    border: 2px solid rgb(154, 139, 46);      /* Set border for table cells */
+    padding: 10px;                              /* Add padding inside table cells */
+    border-radius: 20px;
+}
+
+th, td {
+    padding-right: 30px;                    /* Add right padding for table cells */
+}
+
+td a {
+    text-decoration: none;                  /* Remove default text decoration for links in table cells */
+    color: white;
+}
+
+td a:hover {
+    text-decoration: underline;             /* Underline links in table cells on hover */
+}
+
+.icon1 {
+    border-radius: 30%;                     /* Add border radius to create circle */
+}
+
+span {
+    color: rgb(45, 219, 187);                         /* Set text color for spans to brown */
+}

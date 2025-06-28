@@ -1,0 +1,73 @@
+body {
+    background: #F8F0E5;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #343030;          /* Set background color for header */
+    color: #fff;                        /* Set text color for header */
+}
+
+.s1 {
+    color: rgb(228, 44, 185);                         /* Set text color for spans to pink */
+}
+
+.logo1{
+    font-size: 35px;
+    font-family: monospace;
+	letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.add-products {
+    margin: 40px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgb(8, 0, 0);
+}
+  
+.add-products .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.add-products form {
+    text-align: center;
+}
+  
+.add-products form h3 {
+    margin-bottom: 10px;
+}
+  
+.add-products form .box {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.add-products form .box:focus {
+    outline: none;
+    border-color: #007bff;
+}
+  
+.add-products form .btn {
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.add-products form .btn:hover {
+    background-color: #0056b3;
+}  

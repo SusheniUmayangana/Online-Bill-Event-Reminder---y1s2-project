@@ -1,0 +1,29 @@
+body {
+    background: #F8F0E5;
+}
+
+.terms{
+    padding: 20px;
+}
+
+h2{
+    font-family:Cambria, Cochin, Georgia;
+	font-size: 50px;
+}
+
+h3{
+    color: #333; /* Dark gray color */
+	font-size: 30px;
+	font-family: Montserrat;
+}
+
+p{
+    color: #666; /* Medium gray color */
+    line-height: 1.5; /* Set line height for better readability */
+    text-align: justify;
+}
+
+.p{
+    color: white;
+    text-align: center;
+}

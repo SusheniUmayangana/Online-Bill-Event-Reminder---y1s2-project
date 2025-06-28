@@ -1,0 +1,156 @@
+<?php 
+include 'connect.php';
+if (isset($_POST['submit'])){
+  $Name=$_POST['name'];
+  $Date=$_POST['date'];  
+  $Amount=$_POST['amount'];  
+
+  $sql="INSERT INTO `ticket` (Name, Date, Amount) VALUES('$Name','$Date','$Amount')";
+
+  $result=mysqli_query($con,$sql);
+    if($result)
+    {
+       echo "Data inserted successfully";
+      // header('location:Billing History.php');
+    }
+    else{
+        die(mysqli_error($con));
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Adding links for Title & website Icon-->
+    <title>Online Bill and Event Reminder</title>
+    <link rel="icon" type="image/x-icon" href="Images/PageIcon.png">
+    <!--Style link for Icons using on cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--External Style Files link below-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="finalPayment.css">
+</head>
+<body>
+    <!-- Header Section (Navigation Bar) Start Here..-->
+    <header>
+        <img src="Images/Logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                <li><a href="CntactUs.html" class="nav-link">Contact Us</a></li>
+                <li><a href="EventDashBoard.html" class="nav-link">Events</a></li>
+                <li><a href="Login_Registration.html" class="btn1">Log In</a></li>
+                <li><a href="Login_Registration.html" class="btn1">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section (Navigation Bar) End Here..-->
+
+    <!-- Content Section Start Here..-->
+    <br>
+    <br>
+        <center>
+        <div class="center">
+        <div class="mycontainer1">
+            <label>Name:</label><br><br>
+            <label>Date:</label><br><br>
+            <label> Amount:</label><br><br>
+        </div>
+    
+   
+        <div class="mycontainer2">
+            <form method="post">
+                <input type="text" name="name" placeholder="Enter your name" ><br><br>
+                <input type="text" name="date" placeholder="Enter the date"><br><br>
+                <input type="text" name="amount" placeholder="Amount to pay"><br><br>
+       
+                <button type="submit" name="submit">Pay Now</button>
+                <button type="submit" name="history"><a href="Billing History.php">History</a></button>
+            </form>
+        </div>
+        </div>
+        </center>
+	<br>
+    <!-- Content Section End Here..-->
+
+    <!-- Footer Section Start Here..-->
+    <footer>
+        <nav>
+            <table class="t1">
+                <tr>
+                    <td><a href="AboutUs.html">About Us</a></td>
+                    <td><a href="#">FAQ</a></td>
+                    <td>Address</td>
+                    <td>Follow On Us</td> 
+                </tr>
+
+                <tr>
+                    <td><a href="CntactUs.html">Contact Us</a></td>
+                    <td><a href="Privacy and Policy.html">Privacy Policy</a></td>
+                    <td>33/23/1/1,</td>
+                    <td><br>
+                        <img src="Images/fb.png" class="icon">
+                        <img src="Images/twitter.png" class="icon">
+                        <img src="Images/google.png" class="icon">
+                        <img src="Images/utube.png" class="icon"> 
+                        <img src="Images/insta.jpeg" class="icon"> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><a href="TermsAndConditions.html">Terms and Conditions</a></td>
+                    <td>Albert Place,</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><br>Meda Welikada Road,</td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><br>Rajagiriya, Sri Lanka.</td>
+                </tr>
+
+                <tr>
+                    <td><img src="Images/visa.png" width="130px" height="40px"></td>
+                </tr>
+            </table>
+
+            <table class="t2">
+                <tr>
+                    <td>
+                        <div class="ft">
+                            <center><img src="Images/call.png" class="icon1" height="50px" width="50px"></center>For assistance call<br>+94 7279456321<br>+94 7279456320
+                        </div>
+                    </td>
+                    <td>
+                        <div class="ft"><center><img src="Images/hrs.png" class="icon1" height="50px" width="50px"></center>Working Hours<br>9.00 AM - 5.00 PM<br><pre></pre>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="ft"><center><img src="Images/mail.png" class="icon1" height="50px" width="50px"></center>Email Us On<br><a href="support@eventhandler.lk" >support@eventhandler.lk</a><br><pre></pre>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+        <hr>
+        <p>Copyright 2024 &copy; <span>eventhandler.lk</span> All Rights Reserved.</p>
+        <hr>
+
+    </footer>
+    <!-- Footer Section End Here..-->
+
+</body>
+</html>

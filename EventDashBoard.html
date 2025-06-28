@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Bill and Event Reminder</title>
+    <link rel="icon" type="image/x-icon" href="Images/PageIcon.png">
+    <!--Style link for Icons using on cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--External Style Files link below-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="EventDashBoard.css">
+</head>
+<body>
+    <!-- Header Section (Navigation Bar) Start Here..-->
+    <header>
+        <img src="Images/Logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                <li><a href="CntactUs.html" class="nav-link">Contact Us</a></li>
+                <li><a href="EventDashBoard.html" class="nav-link">Events</a></li>
+                <li><a href="Login.html" class="btn1">Log In</a></li>
+                <li><a href="Register.html" class="btn1">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header Section (Navigation Bar) End Here..-->
+
+    <!-- Content Section Start Here..-->
+
+    <!-- Sliding Image Section.-->
+	<div class="banner">
+            <video autoplay loop muted plays-inline>
+                <source src="Events/Event.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+                <h1>EXPLORE THE EVENTS</h1>
+            </div>
+    </div>
+
+    <!-- table area for cards event (All, Concert, Drama, Musical, Movie)..-->
+    <center>
+    <table border="0" class="Tbl1">
+        <td>
+            <div class="tb">
+                <a href="#">
+                <img src="Events/All.jpg" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+        <td>
+            <div class="tb">
+                <a href="#">
+                <img src="Events/concert.jpg" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+        <td>
+            <div class="tb">
+                <a href="#">
+                <img src="Events/drama.jpg" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+        <td>
+            <div class="tb">
+                <a href="#">
+                <img src="Events/musical.jpg" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+        <td>
+            <div class="tb">
+                <a href="#">
+                <img src="Events/movie.jpg" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+        <td>
+            <div class="add">
+                <a href="#" onclick="admin()">
+                <img src="Events/Add.png" class="icon2" height="80px" width="80px">
+                </a>
+            </div>
+        </td>
+
+        <tr>
+            <td>All</td>
+            <td>Concert</td>
+            <td>Drama</td>
+            <td>Musical</td>
+            <td>Movie</td>
+            <td>Add Event</td>
+        </tr>
+    </table>
+    </center>
+
+    <!-- Events H1 tag..-->
+    <center>
+        <h1>
+            Events
+        </h1>
+    </center>
+
+    <!-- Event Card Section..-->
+    <div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/ahuthi.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Bubbe's Book Club</p>
+                    <div class="separator"></div>
+                    <p class="info">Bellmore, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Grand Central Terminal
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/chandula.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">The Overstory</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/DA.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">The NY Festival</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/Hanthanata-Payana-sanda-.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/LAKNADA.png" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/NAVAGE GEE.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/sene new.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/SFVS.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/SUDDA GEMAK GAHUWA.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/SUPERMAN.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/Thamath-Mathakai.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="Events/Untitled-4-Recovered.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Tech Bubble Conf</p>
+                    <div class="separator"></div>
+                    <p class="info">New York, NY</p>
+                    <p class="price">35$</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            245 W 52nd St, New York
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM EDT
+                        </p>
+
+                        <p class="info description">
+                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
+                            to share yours with us! We meet one Sunday evening <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action"><a href="finalPayment.php">Book It</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Section End Here..-->
+
+    <!-- Footer Section Start Here..-->
+    <footer>
+        <nav>
+            <table class="t1">
+                <tr>
+                    <td><a href="AboutUs.html">About Us</a></td>
+                    <td><a href="#">FAQ</a></td>
+                    <td>Address</td>
+                    <td>Follow On Us</td>
+                </tr>
+
+                <tr>
+                    <td><a href="CntactUs.html">Contact Us</a></td>
+                    <td><a href="Privacy and Policy.html">Privacy Policy</a></td>
+                    <td>33/23/1/1,</td>
+                    <td><br>
+                        <img src="Images/fb.png" class="icon">
+                        <img src="Images/twitter.png" class="icon">
+                        <img src="Images/google.png" class="icon">
+                        <img src="Images/utube.png" class="icon"> 
+                        <img src="Images/insta.jpeg" class="icon"> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><a href="TermsAndConditions.html">Terms and Conditions</a></td>
+                    <td>Albert Place,</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><br>Meda Welikada Road,</td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><br>Rajagiriya, Sri Lanka.</td>
+                </tr>
+
+                <tr>
+                    <td><img src="Images/visa.png" width="130px" height="40px"></td>
+                </tr>
+            </table>
+
+            <table class="t2">
+                <tr>
+                    <td>
+                        <div class="ft">
+                            <center><img src="Images/call.png" class="icon1" height="50px" width="50px"></center>For assistance call<br>+94 7279456321<br>+94 7279456320
+                        </div>
+                    </td>
+                    <td>
+                        <div class="ft"><center><img src="Images/hrs.png" class="icon1" height="50px" width="50px"></center>Working Hours<br>9.00 AM - 5.00 PM<br><pre></pre>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="ft"><center><img src="Images/mail.png" class="icon1" height="50px" width="50px"></center>Email Us On<br><a href="support@eventhandler.lk" >support@eventhandler.lk</a><br><pre></pre>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+        <hr>
+        <p>Copyright 2024 &copy; <span>eventhandler.lk</span> All Rights Reserved.</p>
+        <hr>
+
+    </footer>
+    <!-- Footer Section End Here..-->
+
+    <!-- java script code for validate user or event manager..-->
+    <script>
+        function admin()
+        {
+            var uservalue = confirm("Only Event Manager can do this part..Are you an Event Manager ??");
+
+            if (uservalue == true)
+            {
+                // Redirect to add event form
+                window.location.href = "Event_Manager_login.html";
+            }
+            else
+            {
+                // Redirect to again event dash board
+                window.location.href = "EventDashBoard.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
